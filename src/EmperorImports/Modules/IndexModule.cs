@@ -10,6 +10,8 @@ namespace EmperorImports.Modules
             {
                 return View["index"];
             };
+
+            Get["/credits"] = _ => { return View["credits"]; };
         }
     }
 }

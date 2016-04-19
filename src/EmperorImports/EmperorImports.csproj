@@ -85,6 +85,7 @@
   <ItemGroup>
     <Content Include="Views\index.cshtml" />
     <Content Include="packages.config" />
+    <Content Include="Views\credits.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
