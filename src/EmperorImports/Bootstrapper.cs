@@ -19,5 +19,16 @@ namespace EmperorImports
             Elmahlogging.Enable(pipelines, "elmah", new string[0], new HttpStatusCode[] { HttpStatusCode.NotFound, HttpStatusCode.InsufficientStorage, });
         }
 
+        protected override void RequestStartup(TinyIoCContainer container, IPipelines pipelines, NancyContext context)
+        {
+            base.RequestStartup(container, pipelines, context);
+
+            pipelines.AfterRequest.AddItemToEndOfPipeline(c =>
+            {
+                //Disable XSS filter
+                c.Response.Headers["X-XSS-Protection"] = "0";
+            });
+        }
+
     }
 }
