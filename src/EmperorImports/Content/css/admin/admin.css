@@ -1,0 +1,14 @@
+﻿/**
+* Quick attempt to mimic a popular third party platform - copied some styles from a random login page.
+*/
+
+.wp-core-ui{background:#f1f1f1;}
+a{color:#0073aa;}
+
+#login{width:320px;padding:8% 0 0; margin: auto;}
+.login form{margin-top:20px; margin-left:0; padding:26px 24px 46px; font-weight:400; overflow:hidden; background:#fff; box-shadow:0 1px 3px rgba(0,0,0,.13);}
+
+/* Supposedly styles might be blocked due to swearing... so well fuck - http://dt.deviantart.com/journal/We-Give-a-F-How-the-Site-Loads-392679726 */
+.login h1 a{color:#21759b; font-family: "Book Antiqua",Palatino,"Palatino Linotype","Palatino LT STD",Georgia,serif; text-decoration:none; font-size:4rem;}
+.login h1 a span{color:#464646;}
+.login h1 a:hover,.login h1 a:focus{border-bottom:1px dashed currentColor;}
